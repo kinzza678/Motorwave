@@ -1,0 +1,1046 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "DM Serif Display", serif;
+}
+/* header start*/
+.header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 40px;
+    align-content: center;
+}
+/* header end  */
+/* navbar start */
+.parents{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+    
+    }
+    .navbar{
+      width: 100%;
+      max-width: 1400px;
+      height: 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+      padding: 0 20px;
+    
+      
+    }
+ 
+    .logo img {
+      max-height: 100%;
+    }
+    .links {
+      list-style: none;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 18px;
+ 
+    }
+    .links li a{
+text-decoration: none;
+color: black;
+    }
+    li:hover{
+text-decoration: underline;
+color: red;
+cursor: pointer;
+    }
+    li{
+      padding:13px;
+      text-decoration: none;
+      color: black;
+    }
+    /* navbar end */
+    /* media query */
+   /* Responsive Styles */
+@media screen and (max-width: 768px) {
+.parents{
+  height: 500px;
+
+width: 100%;
+}
+.logo_img{
+  width: 70px;
+  height: 70px;
+}
+.navbar{
+  flex-wrap: wrap;
+flex-direction: column;
+/* align-items: center; */
+height: 450px;
+box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+border: 1px solid black;
+}
+.links{
+  width: 80%;
+  padding: 10px;
+  border-radius: 10px;
+  flex-direction: column;
+  justify-content: center;
+
+}
+li{
+  padding:5px ;
+  align-items: center;
+}
+  /* Hamburger Menu (for smaller screens) */
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    font-size: 30px;
+    padding: 10px;
+  }
+
+  .navbar.active .links {
+    display: flex; /* Show links when navbar is active */
+  }
+}
+
+/* Show hamburger menu icon only for smaller screens */
+
+
+
+    /* carousel start */
+  .carousel{
+    margin-top: 22px;
+    
+  }
+  /* carouse; end */
+  .car_carousal{
+    margin-top: 50px;
+    text-align: center;
+
+  }
+  /* car_carousel start */
+  .car_carousal {
+    text-align: center;
+    margin: 50px 0;
+  }
+  
+  .car_carousal h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .car_carousal p {
+    font-size: 18px;
+    color: gray;
+    margin-bottom: 40px;
+  }
+  
+  .car_carousal_links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .car_item {
+    width: 45%;  /* Adjust width to create a responsive layout */
+    height: 400px;
+    position: relative;
+  }
+  
+  .img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;  /* Ensures images are not distorted */
+    margin-bottom: 20px;
+  }
+  
+  .box {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);  /* Semi-transparent background */
+    color: white;
+    text-align: center;
+  }
+  
+  .boxtext h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .boxtext p {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .boxtext h4 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .boxtext h4:last-child {
+    color: red;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  /* Responsive Design for smaller screens */
+  @media screen and (max-width: 768px) {
+    .car_carousal_links {
+      flex-direction: column;  /* Stack items vertically on smaller screens */
+      align-items: center;
+    }
+  
+    .car_item {
+      width: 80%;  /* Increase the width on mobile */
+      margin-bottom: 20px;
+    }
+  
+    .img {
+      height: 70%;  /* Adjust image height on mobile */
+    }
+  
+    .box {
+      bottom: 10px;
+      padding: 15px;
+    }
+  
+    .boxtext h2 {
+      font-size: 24px;
+    }
+  
+    .boxtext p {
+      font-size: 14px;
+    }
+  
+    .boxtext h4 {
+      font-size: 16px;
+    }
+  }
+  
+/* car caraousalresponsive end */
+/* service section start */
+.services {
+  height: 300px;
+  background-color: rgb(190, 196, 201);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; /* Ensures the boxes wrap on smaller screens */
+  padding: 20px;
+}
+
+.services_box {
+  border: 2px solid rgb(0, 0, 0);
+  height: 150px; /* Increased height for better spacing */
+  width: 250px; /* Decreased width for a better layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  transition: transform 0.3s ease; /* Smooth scaling transition */
+}
+
+.services_box:hover {
+  transform: scale(1.05); /* Slight scale-up effect on hover */
+}
+
+.services_icon {
+  background-color: rgb(203, 208, 212);
+  height: 70px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px; /* Added space between icon and text */
+}
+
+.services_icon_img {
+  height: 40px;
+  width: 40px;
+}
+
+.services_text {
+  height: 60px;
+  width: 100%;
+  color: black;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px; /* Set text size */
+}
+
+.services_text:hover {
+  background-color: rgb(228, 85, 85);
+  color: white; /* Text color changes when hovered */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .services {
+    flex-direction: column; /* Stacks the service boxes vertically on smaller screens */
+    height: auto;
+  }
+
+  .services_box {
+    width: 90%; /* Makes each service box take up most of the width */
+    margin: 10px 0; /* Adds spacing between boxes */
+  }
+}
+
+
+/* card section start */
+.cards {
+  height: 500px;
+  margin-top: 30px;
+  text-align: center; /* Center align the title and paragraph */
+}
+
+.cards h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.cards p {
+  font-size: 1.2rem;
+  color: gray;
+  margin-bottom: 30px;
+}
+
+.cards_img_section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+  gap: 20px;
+}
+
+.cards_img {
+  /* border: 2px solid green; */
+  height: 300px;
+  width: 300px;
+  object-fit: cover; /* Ensures images cover the card space without distortion */
+  border-radius: 10px; /* Rounded corners for the images */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.cards_text {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text */
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cards_text h3 {
+  margin: 0;
+}
+
+/* Hover effects for images and text */
+.cards_img:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add a shadow when hovering */
+}
+
+.cards_img:hover + .cards_text {
+  background-color: rgba(0, 0, 0, 0.7); /* Darker background on hover */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .cards_img_section {
+    justify-content: center; /* Center the cards on smaller screens */
+  }
+
+  .cards_img {
+    width: 250px; /* Slightly smaller images */
+    height: 250px;
+  }
+
+  .cards_text {
+    font-size: 1rem; /* Reduce font size on smaller screens */
+    bottom: 10px;
+    padding: 5px;
+  }
+}
+
+/* card section end */
+.event {
+  height: 600px;
+  margin-top: 50px;
+  text-align: center; /* Center the heading and paragraph */
+}
+
+.event h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.event p {
+  font-size: 1.2rem;
+  color: gray;
+  margin-bottom: 30px;
+}
+
+.event_cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+  gap: 20px;
+}
+
+.card {
+  width: 18rem;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid #ddd;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #333;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.card-text b {
+  font-size: 1.1rem;
+  color: #000;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.card:hover .card-text {
+  color: #e84e3c; /* Text color change on hover */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .event_cards {
+    justify-content: center; /* Center the cards on smaller screens */
+  }
+
+  .card {
+    width: 100%; /* Make cards take up full width */
+    max-width: 350px; /* Set a max-width to prevent them from stretching too far */
+    margin-bottom: 20px;
+  }
+}
+
+/* review end */
+/* footer start */
+.footer {
+  height: auto;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 40px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.leftside {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.footer_logo img {
+  width: 100%;
+  max-width: 150px;
+  margin-bottom: 20px;
+}
+
+.footer_leftside_text h4 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.footer_leftside_text p,
+.footer_leftside_text a {
+  font-size: 0.9rem;
+  color: rgb(161, 161, 161);
+  margin-bottom: 5px;
+}
+
+.footer_leftside_text a {
+  text-decoration: none;
+}
+
+.footer_leftside_icon {
+  margin-top: 20px;
+}
+
+.footer_leftside_icon h4 {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.footer_leftside_icon i {
+  font-size: 1.5rem;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.footer_leftside_icon i:hover {
+  color: #e84e3c; /* Change color on hover */
+}
+
+.rightside {
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.rightside_part1 {
+  width: 30%;
+  margin-top: 20px;
+}
+
+.rightside_part1 h4 {
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.rightside_part1 a {
+  display: block;
+  text-decoration: none;
+  color: rgb(172, 172, 172);
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+
+.rightside_part1 a:hover {
+  color: #e84e3c; /* Hover effect */
+}
+
+.rightside_part1 h5 {
+  font-size: 1rem;
+  color: white;
+  margin-bottom: 10p
+}
+                /* Showroom page */           
+                .showroom {
+                  display: flex;
+                  flex-wrap: wrap;
+                  justify-content: space-around;
+                  gap: 20px; /* Ensures space between each car item */
+                  margin-top: 30px;
+                }
+                
+                .heading {
+                  text-align: center;
+                  margin-top: 50px;
+                  font-size: 32px;
+                  color: #333;
+                }
+                
+                .showroom_cars {
+                  width: 22%; /* Control the width of each car item */
+                  text-align: center;
+                  background-color: #f5f5f5;
+                  padding: 20px;
+                  border-radius: 8px;
+                  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                  margin-bottom: 20px;
+                  transition: transform 0.3s ease-in-out; /* Smooth hover transition */
+                }
+                
+                .showroom_cars img {
+                  width: 100%;
+                  height: auto;
+                  border-radius: 8px;
+                }
+                
+                .showroom_cars h3 {
+                  font-size: 24px;
+                  margin-top: 10px;
+                  color: #333;
+                }
+                
+                .showroom_cars p {
+                  font-size: 16px;
+                  color: #444;
+                }
+                
+                .showroom_cars a {
+                  display: inline-block;
+                  font-size: 18px;
+                  color: red;
+                  text-decoration: none;
+                  margin-top: 10px;
+                  transition: color 0.3s ease-in-out;
+                }
+                
+                .showroom_cars a:hover {
+                  color: darkred;
+                  text-decoration: underline;
+                }
+                
+                .showroom_cars:hover {
+                  transform: translateY(-10px); /* Adds a lift effect on hover */
+                }
+                
+                @media screen and (max-width: 1024px) {
+                  .showroom_cars {
+                    width: 45%; /* Stacks items when screen is medium size */
+                  }
+                }
+                
+                @media screen and (max-width: 768px) {
+                  .showroom_cars {
+                    width: 90%; /* Makes car items take up most of the width on mobile */
+                  }
+                }
+                
+/* coreer page stART */
+/* Corporate Section Styles */
+.corporate {
+  margin-top: 50px;
+}
+
+/* Image Styling */
+.corporate_img img {
+  width: 100%; /* Makes the image responsive */
+  height: auto;
+  object-fit: cover; /* Ensures the image covers the container */
+}
+
+/* AGM Notices Section */
+.agmnotices {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.agmnotices h1 {
+  color: red;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.agmnotices h4 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* AGM Notices List */
+.agmnotices_li ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.agmnotices_li li {
+  font-size: 18px;
+  margin: 8px 0;
+  color: red;
+}
+
+.agmnotices_li li a {
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.agmnotices_li li a:hover {
+  color: darkred;
+  text-decoration: underline;
+}
+
+/* Corporate Dropdown Styles */
+
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+  .agmnotices h1 {
+    font-size: 28px; /* Smaller heading on mobile */
+  }
+
+  .agmnotices h4 {
+    font-size: 16px; /* Smaller subheading on mobile */
+  }
+
+  .agmnotices_li li {
+    font-size: 16px; /* Smaller font size for list items */
+  }
+
+  .agmnotices_li li a {
+    font-size: 16px;
+  }
+
+  .carporate_dropdown_box {
+    width: 100%; /* Dropdown expands to full width on small screens */
+    margin: 10px 0;
+  }
+}
+
+
+ /* carrer page end */
+ /* corporate page start */
+/* Company Profile Layout */
+.companyprofile {
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* Space between the content sections */
+  align-items: center; /* Align the items vertically in the middle */
+  flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+  margin-top: 50px;
+}
+
+/* Left section: Text content */
+.companyprofileleft {
+  width: 65%; /* Takes 65% of space */
+  font-size: large;
+  line-height: 1.6; /* Improve readability */
+  padding-right: 20px;
+}
+
+.companyprofileleft p {
+  margin-bottom: 20px; /* Add some space between paragraphs */
+}
+
+/* Right section: Image */
+.companyprofileright {
+  width: 35%; /* Takes 35% of space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.companyprofileright img {
+  width: 100%;
+  max-width: 400px; /* Limit image size */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Heading Styles */
+.Company_Profile {
+  color: red;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 36px; /* Make the heading larger */
+  font-weight: bold;
+}
+
+/* Corporate Image Styling */
+.corporate-img-2 {
+  float: right;
+  max-width: 300px; /* Limit image size */
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+/* Video Section */
+.video_text {
+  margin-top: 30px;
+  text-align: center; /* Center-align the video and text */
+}
+
+.video_text iframe {
+  width: 100%;
+  max-width: 1350px; /* Limit video width */
+  height: 500px;
+  margin-bottom: 20px;
+}
+
+.video_text p {
+  margin-left: 10px;
+  font-size: 18px;
+  line-height: 1.6; /* Improve readability */
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+  .companyprofile {
+    flex-direction: column; /* Stack content on small screens */
+    align-items: center; /* Center align everything */
+  }
+
+  .companyprofileleft,
+  .companyprofileright {
+    width: 100%; /* Make both sections take full width */
+    text-align: center;
+  }
+
+  .companyprofileleft {
+    padding-right: 0; /* Remove padding for smaller screens */
+  }
+
+  .companyprofileright img {
+    max-width: 100%; /* Make the image responsive */
+    height: auto;
+  }
+
+  .corporate-img-2 {
+    float: none;
+    max-width: 100%; /* Ensure image doesn't overflow */
+    margin-left: 0;
+  }
+
+  .video_text iframe {
+    max-width: 100%; /* Make video responsive */
+    height: 300px; /* Adjust video height on mobile */
+  }
+
+  .video_text p {
+    font-size: 16px; /* Smaller font size for mobile */
+  }
+
+  .Company_Profile {
+    font-size: 28px; /* Adjust heading size on mobile */
+  }
+}
+/* contact page start */
+/* Container for the entire contact section */
+.contact-section {
+  padding: 50px 20px;
+}
+
+/* Title styles */
+.contactus {
+  color: red;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Contact Form Styles */
+.contact-form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h4 {
+  color: red;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.contact-form .form-label {
+  font-weight: bold;
+  color: #333;
+}
+
+.contact-form .form-control {
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  width: 100%;
+}
+
+.contact-form .btn-primary {
+  background-color: red;
+  border-color: red;
+  padding: 10px 20px;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.contact-form .btn-primary:hover {
+  background-color: darkred;
+}
+
+/* Store Information Styles */
+.store-info ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.store-info li {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.store-info li strong {
+  color: red;
+}
+
+/* Map Section */
+.map-container {
+  margin-top: 30px;
+}
+
+iframe {
+  width: 100%;
+  height: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+  .contactus {
+    font-size: 28px;
+  }
+
+  .contact-form {
+    padding: 15px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .contact-form, .store-info {
+    width: 100%;
+  }
+
+  iframe {
+    height: 300px; /* Adjust the map height for mobile */
+  }
+}
+/* after sales */
+/* After Sales Section */
+.aftersales {
+  background-color: #f8f8f8;
+  padding: 30px;
+  text-align: center;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.aftersales h3 {
+  color: red;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.aftersales p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* After Sales Text Section */
+.aftersales_text {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.aftersales_text h1 {
+  color: red;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.aftersales_text p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* After Sales Form Section */
+.aftersales_section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.aftersales_askques {
+  width: 45%;
+}
+
+.aftersales_askques label {
+  font-weight: bold;
+  color: #333;
+}
+
+.aftersales_askques input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+}
+
+.aftersales_askques input:focus {
+  border-color: red;
+}
+
+/* Button */
+.btn {
+  background-color: red;
+  color: white;
+  padding: 12px 30px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.btn:hover {
+  background-color: darkred;
+}
+
+/* Question Section */
+.questionsection {
+  width: 45%;
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.questionsection p {
+  color: #555;
+  font-size: 16px;
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+  .aftersales_section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aftersales_askques,
+  .questionsection {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .aftersales h3,
+  .aftersales_text h1 {
+    font-size: 28px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
